@@ -1,9 +1,4 @@
-#include <amnesia.h>
-
-struct amnesia_ctx_t {
-    int pid;
-    amnesia_mode_t mode;
-};
+#include "amnesia.h"
 
 int open_process(amnesia_ctx_t* ctx, int pid, amnesia_mode_t mode)
 {
@@ -33,7 +28,7 @@ amnesia_ctx_t* amnesia_init(amnesia_ctx_t* ctx, int pid, amnesia_mode_t mode)
  * @param data_len Amount of data that was read.
  * @return Returns value < 0 on error, otherwise 0 on success.
  */
-int amnesia_read(amnesia_ctx_t* ctx, uintptr_t* address, size_t amt, uint8_t** data, size_t* data_len)
+int amnesia_read(amnesia_ctx_t* ctx, uintptr_t address, size_t amt, uint8_t** data, size_t* data_len)
 {
     return -1;
 }
@@ -47,7 +42,7 @@ int amnesia_read(amnesia_ctx_t* ctx, uintptr_t* address, size_t amt, uint8_t** d
  * @param data_len Amount of data to write.
  * @return Returns value < 0 on error, otherwise 0 on success.
  */
-int amnesia_write(amnesia_ctx_t* ctx, uintptr_t* address, uint8_t* data, size_t data_len)
+int amnesia_write(amnesia_ctx_t* ctx, uintptr_t address, uint8_t* data, size_t data_len)
 {
     return -1;
 }
