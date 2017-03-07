@@ -23,6 +23,7 @@ include_directories(
 # Source files
 set(AMNESIA_CORE_SRC
     amnesia.c
+    modes/syscall/syscall.c
 )
 
 # Save me from manually including the files ;)
