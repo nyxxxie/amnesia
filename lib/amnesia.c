@@ -1,4 +1,4 @@
-#include "amnesia.h"
+#include <amnesia.h>
 
 struct amnesia_ctx_t {
     int pid;
@@ -28,7 +28,7 @@ amnesia_ctx_t* amnesia_init(amnesia_ctx_t* ctx, int pid, amnesia_mode_t mode)
  *
  * @param ctx amnesia_ctx_t context to operate on.
  * @param address Address to read from.
- * @param amt Amount of data to read
+ * @param amt Amount of data to read.
  * @param data Data that was read from process.
  * @param data_len Amount of data that was read.
  * @return Returns value < 0 on error, otherwise 0 on success.

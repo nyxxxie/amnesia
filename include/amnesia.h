@@ -40,7 +40,7 @@ amnesia_mode_t amnesia_get_mode(amnesia_ctx_t* ctx);
 int amnesia_get_pid(amnesia_ctx_t* ctx);
 
 /* Read/write primitives */
-int amnesia_read(amnesia_ctx_t* ctx, uintptr_t* ptr, uint8_t** data, size_t* data_len);
+int amnesia_read(amnesia_ctx_t* ctx, uintptr_t* address, size_t amt, uint8_t** data, size_t* data_len);
 int amnesia_write(amnesia_ctx_t* ctx, uintptr_t* ptr, uint8_t* data, size_t data_len);
 
 /* Process utils */
